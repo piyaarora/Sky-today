@@ -1,0 +1,267 @@
+html, body, #root {
+  font: 0.9rem sans-serif;
+  background: #0a1f44;
+  color: #1e2432;
+  height: 100%;
+  margin: 0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap');
+
+
+.main-container {
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4) ), url('./images/Weather-Blog-Image.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.logo{
+  height: 186px;
+  width: 192px;
+  position: absolute;
+  top: -40px;
+  left: 10px;
+}
+
+.main-container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+.search {
+  outline: none;
+  padding: 20px 7%;
+  border-radius: 20px;
+  border: none;
+  margin-bottom: 10px;
+  background: rgba(250, 250, 250, 0.85);
+}
+
+.city {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 30px 8%;
+  border-radius: 20px;
+  background: rgba(250, 250, 250, 0.85);
+  box-shadow: 10px 10px 5px 0px rgba(15, 15, 15, 0.404);
+}
+
+p {
+  margin-top: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.city-temp {
+  font-size: 5rem;
+  font-weight: bold;
+  margin-top: 10px;
+  color: #1e2432;
+  text-align: center;
+}
+
+.city sup {
+  font-size: 0.5em;
+}
+
+.city-name {
+  font-size: 2em;
+}
+
+.city-name sup {
+  padding: 0.2em 0.6em;
+  margin-left: 0.2em;
+  border-radius: 30px;
+  color: #fff;
+  background: #ff8c00;
+}
+
+.city-icon {
+  /* margin-top: 10px; */
+  width: 80px;
+  height: 80px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .search {
+      padding: 20px 15%;
+  }
+
+  .city {
+      padding: 40px 20%;
+  }
+}
+
+.container{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+h1{
+  color: #fff;
+  font-weight: 500;
+  padding-top: 70px;
+  /* font-family: 'Pacifico', cursive; */
+  font-family: 'Oleo Script', cursive;
+  max-width: 500px;
+}
+
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap");
+.row{
+  width:-webkit-fill-available;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: 0;
+  margin-left: 0;}
+.card {
+	color: white;
+	border-radius: 8px;
+	display: block;
+	margin: 1rem;
+	position: relative;
+	align-items: left;
+	max-width: 380px;
+	background: linear-gradient(315deg, #2b2b2b, #333333);
+}
+.main-content {
+	text-align: -webkit-center;
+}
+.card-content {
+	margin: 24px;
+    text-align: left;
+    margin-bottom: 8px;
+}
+
+.card-title {
+	margin-block-end: 0px;
+	color: var(--text-color);
+	padding: 24px;
+}
+
+.divButton {
+	background: white;
+	color: black;
+	border-radius: 20px;
+	padding: 8px 32px 8px 32px;
+	font-size: 0.85rem;
+	font-weight: 600;
+}
+
+body {
+	background-color: #303030;
+	text-align: center;
+	font-family: Montserrat;
+}
+
+
+/*
+Gradients from https://uigradients.com
+*/
+.hydrogen-card {
+	background-color: #000000;
+  background-image: linear-gradient(387deg, #000000 0%, #414141 100%);
+  background-image: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ),url(https://images.unsplash.com/photo-1473116519190-356a1463fbcf?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTMwfHxzYW4lMjBmcmFuY2lzY298ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=60);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-color: #414141;
+  border-width: 1.5px;
+}
+
+.chip {
+    border-color: #707070;
+    border-width: 1.5px !important;
+    border-style: solid;
+    border-radius: 3px;
+    text-align: center;
+    font-size: 0.9rem;
+    padding: 2px;
+}
+.wind-icon {
+  fill: #AAAAAA;
+  height: 16px;
+  width: 16px;
+}
+
+.wind-value {
+    font-size: 0.8rem;
+    display: inline-flex;
+    margin-left: 16px;
+}
+
+.humidity-icon {
+  fill: #AAAAAA;
+  height: 16px;
+  width: 16px;
+}
+.humidity-value {
+    font-size: 0.8rem;
+    display: inline-flex;
+    margin-left: 16px;
+}
+
+.sun-icon {
+  fill: #AAAAAA;
+  height: 16px;
+  width: 16px;
+}
+.sun-value {
+    font-size: 0.8rem;
+    display: inline-flex;
+    margin-left: 16px;
+}
+
+.temperature {
+  font-size: 4rem;
+  text-align: end;
+}
+
+.rain-icon {
+  height: 100px;
+  width: 100px;
+}
+
+.icon-vgradient {
+  fill: url(#gradient-vertical);
+}
+
+#gradient-vertical {
+  --color-stop-1: #00c3ff;
+  --color-stop-2: #77e190;
+  --color-stop-3: #ffff1c;
+}
+
+.weather {
+  text-align:center;
+}
+
+.weather-description {
+      margin: 0.3rem;
+    display: block;
+    color: #fff;
+    font-size: 2em;
+    text-transform: capitalize;
+}
+
+.main {
+  margin: 30px;
+}
